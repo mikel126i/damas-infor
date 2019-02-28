@@ -1,0 +1,4 @@
+﻿cl : Línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  tablero.cpp
+casilla.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/INCREMENTAL:NO'
+  Pang.vcxproj -> C:\Users\mikel\OneDrive\Documentos\Trabajo informática (Mikel)\Tema2inicial2012\Tema2inicial2012\.\Debug\Pang.exe
