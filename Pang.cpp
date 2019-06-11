@@ -1,5 +1,6 @@
 #include "glut.h"
 #include "tablero.h"
+#include "FichaBlanca.h"
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
 //NO HACE FALTA LLAMARLAS EXPLICITAMENTE
@@ -8,6 +9,7 @@ void OnTimer(int value); //esta funcion sera llamada cuando transcurra una tempo
 void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecla	
 
 tablero tabler;
+FichaBlanca f1;
 
 int main(int argc,char* argv[])
 {
@@ -39,6 +41,8 @@ int main(int argc,char* argv[])
 void OnDraw(void)
 {
 	tabler.dibujarTablero();
+	//f1.dibujarFichasIniciales();
+
 	
 }
 void OnKeyboardDown(unsigned char key, int x_t, int y_t)

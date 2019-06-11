@@ -1,5 +1,6 @@
 #include "casilla.h"
 #include "glut.h"
+#include "math.h"
 
 
 
@@ -30,6 +31,17 @@ void casilla::dibujarCasilla() {
 	//no borrar esta linea ni poner nada despues
 	
 }
+Vector2D casilla::getCasilla(int f, int c) {
+	//nos devuelve un vector con las coordenadas de  la casilla[f][c] del tablero respecto la esquina inferior izquierda (0x0) del mismo
+
+	Vector2D centro;
+	
+	centro.x = (-0.5 - c);
+	centro.y = (-0.5 - f);
+	//centro = (-0.5 - c, -0.5 - f); //sistema gltranslatef(-x,-y,z)
+	return centro;
+}
+
 
 casilla::~casilla()
 {

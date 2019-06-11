@@ -5,9 +5,9 @@ class Ficha
 {
 public:
 	Ficha();
-	tablero t1;
-	void dibujarFicha(void);
-	void desplazarFicha(void);
+	Vector2D centro;
+	Vector2D dibujarFicha(int f, int c);//esta funcion es para dibujar fichas nuevas (desplazamientos)
+
 	~Ficha();
 };
 

@@ -1,5 +1,6 @@
 #include "Ficha.h"
 #include "glut.h"
+#include "Vector2D.h"
 
 
 
@@ -7,10 +8,17 @@ Ficha::Ficha()
 {
 	
 }
-void Ficha::dibujarFicha(void) {
-	glutWireCube(0.5);
-	t1.c[n][i];			//¿como accedo a la matriz de punteros construída en tablero.cpp?
-
+Vector2D Ficha::dibujarFicha(int f, int c) {
+	//dibuja una casilla (un cubo) en el centro de la casilla [f][c] (respecto esquina inferior izquierda)
+	//al ejecutar está función se da por sentado que ya nos q situado en la esquina inferior izquierda
+	casilla cas;
+	 centro = cas.getCasilla(f, c);
+	glTranslatef(centro.x, centro.y, 0);// centro.x= -c-0.5
+	glutSolidCube(0.5);
+	glTranslatef(-centro.x, -centro.y, 0);
+	return centro;
+	
+}
 Ficha::~Ficha()
 {
 }

@@ -130,6 +130,9 @@
   <ItemGroup>
     <ClCompile Include="casilla.cpp" />
     <ClCompile Include="Ficha.cpp" />
+    <ClCompile Include="FichaBlanca.cpp" />
+    <ClCompile Include="FichaNegra.cpp" />
+    <ClCompile Include="MoverFicha.cpp" />
     <ClCompile Include="Pang.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -140,6 +143,9 @@
   <ItemGroup>
     <ClInclude Include="casilla.h" />
     <ClInclude Include="Ficha.h" />
+    <ClInclude Include="FichaBlanca.h" />
+    <ClInclude Include="FichaNegra.h" />
+    <ClInclude Include="MoverFicha.h" />
     <ClInclude Include="tablero.h" />
     <ClInclude Include="Vector2D.h" />
   </ItemGroup>

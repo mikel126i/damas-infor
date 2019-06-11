@@ -1,4 +1,31 @@
 ﻿cl : Línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
   tablero.cpp
-casilla.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/INCREMENTAL:NO'
-  Pang.vcxproj -> C:\Users\mikel\OneDrive\Documentos\Trabajo informática (Mikel)\Tema2inicial2012\Tema2inicial2012\.\Debug\Pang.exe
+  MoverFicha.cpp
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(4): error C2504: 'Ficha': clase base sin definir
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(7): error C3646: 'f1': especificador de invalidación desconocido
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(7): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\moverficha.cpp(23): error C2106: '=': el operando izquierdo debe ser valor L
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\moverficha.cpp(26): error C2601: 'identificarFicha': las definiciones de funciones locales no son válidas
+  c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\moverficha.cpp(18): note: esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\moverficha.cpp(29): error C2601: 'identificarCasilla': las definiciones de funciones locales no son válidas
+  c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\moverficha.cpp(18): note: esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\moverficha.cpp(36): error C2064: el término no se evalúa como una función con 1 argumentos
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\moverficha.cpp(18): fatal error C1075: "{": no se encontró ningún token coincidente
+  FichaBlanca.cpp
+  Ficha.cpp
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(4): error C2504: 'Ficha': clase base sin definir
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(7): error C3646: 'f1': especificador de invalidación desconocido
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(7): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  casilla.cpp
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\tablero.h(10): error C2143: error de sintaxis: falta ';' delante de '*'
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\tablero.h(10): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\tablero.h(10): error C2238: símbolos (token) inesperados delante de ';'
+  Generando código...
+  Compilando...
+  Pang.cpp
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\pang.cpp(56): warning C4551: la llamada a la función no tiene lista de argumentos
+  FichaNegra.cpp
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(4): error C2504: 'Ficha': clase base sin definir
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(7): error C3646: 'f1': especificador de invalidación desconocido
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\tema2inicial2012\tema2inicial2012\fichablanca.h(7): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  Generando código...
