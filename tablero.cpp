@@ -4,6 +4,7 @@
 #include "math.h"
 #include "FichaBlanca.h"
 #include "FichaNegra.h"
+#include "casilla.h"
 
 
 tablero::tablero()
@@ -21,12 +22,8 @@ void tablero::dibujarTablero() {
 	FichaBlanca f1;
 	FichaNegra f2;
 	Ficha fich;
-	//Borrado de la pantalla	
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	casilla cas;
 
-	//Para definir el punto de vista
-	glMatrixMode(GL_MODELVIEW);
-	glLoadIdentity();
 
 	gluLookAt(5, 10, 50,  // posicion del ojo
 		5.0, 5.0, 0.0,      // hacia que punto mira  (0,0,0) 
@@ -48,10 +45,11 @@ void tablero::dibujarTablero() {
 	f1.dibujarFichasIniciales();
 	glColor3ub(20, 250, 0);
 	f2.dibujarFichasIniciales();
+
 	
 	
 	
-	glutSwapBuffers();
+
 
 }
 

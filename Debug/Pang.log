@@ -1,1 +1,7 @@
-﻿  Pang.vcxproj -> C:\Users\mikel\OneDrive\Documentos\Trabajo informática (Mikel)\DibujoOK(FichasIniciales+Tablero)\damas-infor\.\Debug\Pang.exe
+﻿cl : Línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  tablero.cpp
+  Pang.cpp
+c:\users\mikel\onedrive\documentos\trabajo informática (mikel)\posicionmanook\damas-infor\pang.cpp(68): warning C4551: la llamada a la función no tiene lista de argumentos
+  Generando código...
+casilla.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/INCREMENTAL:NO'
+  Pang.vcxproj -> C:\Users\mikel\OneDrive\Documentos\Trabajo informática (Mikel)\PosicionManoOK\damas-infor\.\Debug\Pang.exe

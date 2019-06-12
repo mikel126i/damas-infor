@@ -1,6 +1,7 @@
 #include "glut.h"
 #include "tablero.h"
 #include "FichaBlanca.h"
+#include "MoverFicha.h"
 //los callback, funciones que seran llamadas automaticamente por la glut
 //cuando sucedan eventos
 //NO HACE FALTA LLAMARLAS EXPLICITAMENTE
@@ -10,6 +11,8 @@ void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecl
 
 tablero tabler;
 FichaBlanca f1;
+MoverFicha mano;
+casilla cas;
 
 int main(int argc,char* argv[])
 {
@@ -40,13 +43,22 @@ int main(int argc,char* argv[])
 }
 void OnDraw(void)
 {
-	tabler.dibujarTablero();
-	//f1.dibujarFichasIniciales();
+	//Borrado de la pantalla	
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	
+	//Para definir el punto de vista
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+
+	tabler.dibujarTablero();
+	cas.dibujarMano(mano.f, mano.c);
+
+	glutSwapBuffers();
 }
 void OnKeyboardDown(unsigned char key, int x_t, int y_t)
 {
+	mano.MoverMano(key);
+	glutPostRedisplay();
 
 }
 

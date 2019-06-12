@@ -7,7 +7,9 @@ public:
 	casilla();
 	void dibujarCasilla(void);
 	void colorearCasilla(int color);
+	void dibujarMano(int f, int c);
 	Vector2D getCasilla(int f, int c);
+	Vector2D posicion;
 	~casilla();
 };
 

@@ -31,6 +31,22 @@ void casilla::dibujarCasilla() {
 	//no borrar esta linea ni poner nada despues
 	
 }
+void casilla::dibujarMano(int f, int c) {
+
+	posicion.x = (-c - 0.5);
+	posicion.y = (-f - 0.5);
+	glColor3ub(0, 0, 255);
+	glTranslatef((posicion.x), (posicion.y), 0);
+	glBegin(GL_POLYGON);
+	glVertex3f(0.5f, 0.5f, 0.1f);
+	glVertex3f(-0.5f, 0.5f, 0.1f);
+	glVertex3f(-0.5f, -0.5f, 0.1f);
+	glVertex3f(0.5f, -0.5f, 0.1f);
+	glEnd();
+	glTranslatef((-posicion.x), (-posicion.y), 0);
+
+
+}
 Vector2D casilla::getCasilla(int f, int c) {
 	//nos devuelve un vector con las coordenadas de  la casilla[f][c] del tablero respecto la esquina inferior izquierda (0x0) del mismo
 

@@ -6,13 +6,15 @@ class MoverFicha
 {
 public:
 	MoverFicha();
+	int f, c;
+	bool turno;
 	bool selecionada; //vale '1' si he seleccionado la ficha
-	void identificarCasilla(float x, float y);
-	void Mover(char tecla);
-	void Seleccionar(char tecla);
+	void MoverMano(unsigned char tecla);
+	void Seleccionar(unsigned char tecla);
 	Vector2D posicion;
-	FichaBlanca f1;
-	tablero t1;
+	FichaBlanca FichaB;
+	FichaNegra FichaN;
+	casilla cas;
 	~MoverFicha();
 };
 
