@@ -3,12 +3,11 @@
 #include "glut.h"
 #include "Vector2D.h"
 #include "Ficha.h"
-class Ficha;
+class casilla;
 class tablero
 {
 public:
 	casilla **c;
-//	Ficha *f1;
 	int i, j, n, m;
 	tablero();
 	void dibujarTablero();

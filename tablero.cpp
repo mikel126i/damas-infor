@@ -20,7 +20,7 @@ tablero::tablero()
 void tablero::dibujarTablero() {
 	FichaBlanca f1;
 	FichaNegra f2;
-	Ficha ficha;
+	Ficha fich;
 	//Borrado de la pantalla	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -28,7 +28,7 @@ void tablero::dibujarTablero() {
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 
-	gluLookAt(5, 10, 20,  // posicion del ojo
+	gluLookAt(5, 10, 50,  // posicion del ojo
 		5.0, 5.0, 0.0,      // hacia que punto mira  (0,0,0) 
 		0.0, 0.0, 1.0);      // definimos hacia arriba (eje Z) 
 	int n;
@@ -44,8 +44,7 @@ void tablero::dibujarTablero() {
 		glTranslatef(-10, 1, 0); // (x,y,z)
 	}
 	glTranslatef(11, 0, 0); //volvemos a la esquina inferior izquierda del tablero
-	glColor3ub(250, 20, 0);
-
+	glColor3ub(250, 20, 0); //rojo
 	f1.dibujarFichasIniciales();
 	glColor3ub(20, 250, 0);
 	f2.dibujarFichasIniciales();
@@ -58,7 +57,7 @@ void tablero::dibujarTablero() {
 
 
 
-void dibujarFichasIniciales() {
+/*void dibujarFichasIniciales() {
 		int i, j, n=0;
 		for (i = 0;i < 4;i++) {	
 
@@ -69,7 +68,7 @@ void dibujarFichasIniciales() {
 			}
 			glTranslatef(-7, 1, 0);
 		}
-}
+}*/
 tablero::~tablero()
 {
 

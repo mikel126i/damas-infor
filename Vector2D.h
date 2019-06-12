@@ -12,5 +12,6 @@ public:
 	Vector2D operator + (Vector2D &v);
 	float operator *(Vector2D &v);
 	Vector2D operator *(float n);
+	bool operator = (Vector2D &v); //esta la ha metido Mikel
 };
 

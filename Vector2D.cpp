@@ -50,6 +50,12 @@ Vector2D Vector2D::operator * (float n)
 	res.y = y * n;
 	return res;
 }
+bool Vector2D::operator = (Vector2D &v) {
+	if (v.x == x && v.y == y)
+		return true;
+	else
+		return false;
+}
 
 Vector2D::~Vector2D()
 {
